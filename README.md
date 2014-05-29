@@ -12,7 +12,7 @@ Disclaimer: This tool is POC for educational purposes only
 Installation:
 
 You will need:
-lxml - apt-get install python-lxml
+apt-get install python-lxml
 pip install selenium
 pip install requests
 pip install colorama
