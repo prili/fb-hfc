@@ -45,7 +45,7 @@ print "python fb-hfc.py -username <username>  -password '<password>' \n-query '<
 print "2. Exctracting hidden friends:"
 print "python fb-hfc.py -username <username>  -password '<password>' \n-target <target> -profilesfile <file.txt> -output <output.txt>"
 print "-----------------------------------------------------------------------------"
-#args
+
 
 
 
@@ -118,7 +118,7 @@ def graph_search(graph_search_query):
 	elem.send_keys(graph_search_query)
 	elem.send_keys(Keys.RETURN)
 	print Fore.GREEN + "Done\n"
-#collect usernames
+
 def extract_profiles():
 	while True:
 		time.sleep(1)
@@ -233,8 +233,7 @@ def check_if_public(profiles,cookies):
 			print Fore.GREEN + "Public"
 		else:
 			print Fore.RED + "None Public"
-	# ADD SOME MORE SOUCE .//span[@class='_3sz']/text()
-	#print html
+
 	print "\nTotal of %s public profiles have been found\n" % str(len(public_profile))
 	return set(public_profile)
 
@@ -296,7 +295,6 @@ driver = webdriver.Firefox()
 
 cookies = dict()
 cookies = facebook_login(username,password)
-#print cookies
 
 
 if args.query:
