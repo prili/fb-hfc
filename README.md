@@ -14,11 +14,7 @@ Installation:
 You will need:
 apt-get install python-lxml
 
-pip install selenium
-
-pip install requests
-
-pip install colorama
+pip install -r requirements.txt
 
 Note: Tested on ubuntu only
 
