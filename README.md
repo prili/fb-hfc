@@ -20,5 +20,7 @@ pip install requests
 
 pip install colorama
 
+pip install pyvirtualdisplay
+
 Note: Tested on ubuntu only
 
