@@ -6,7 +6,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 from StringIO import StringIO
 from colorama import init
 from colorama import Fore, Back, Style
-from pyvirtualdisplay import Display
+import os
+if os.name != 'nt':
+	from pyvirtualdisplay import Display
 import lxml.html
 import time
 import re
@@ -287,9 +289,9 @@ if args.target and args.profilesfile:
 
 
 
-
-display = Display(visible=0, size=(1600, 900))
-display.start()
+if os.name != 'nt':
+	display = Display(visible=0, size=(1600, 900))
+	display.start()
 
 driver = webdriver.Firefox()
 
